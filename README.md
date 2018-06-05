@@ -1,12 +1,14 @@
 # Fileman client
 
-[![build status](https://img.shields.io/travis/imcuttle/fileman-client/master.svg?style=flat-square)](https://travis-ci.org/imcuttle/fileman-client)
-[![Test coverage](https://img.shields.io/codecov/c/github/imcuttle/fileman-client.svg?style=flat-square)](https://codecov.io/github/imcuttle/fileman-client?branch=master)
+[![build status](https://img.shields.io/travis/big-wheel/fileman-client/master.svg?style=flat-square)](https://travis-ci.org/big-wheel/fileman-client)
+[![Test coverage](https://img.shields.io/codecov/c/github/big-wheel/fileman-client.svg?style=flat-square)](https://codecov.io/github/big-wheel/fileman-client?branch=master)
 [![NPM version](https://img.shields.io/npm/v/fileman-client.svg?style=flat-square)](https://www.npmjs.com/package/fileman-client)
 [![NPM Downloads](https://img.shields.io/npm/dm/fileman-client.svg?style=flat-square&maxAge=43200)](https://www.npmjs.com/package/fileman-client)
 
-> 一个迷你封装 from 一个小轮子 [express-restful-fileman](https://github.com/imcuttle/express-restful-fileman)，用于方便管理静态的 sdk。
-静态服务推荐使用另外一个小轮子 [github-similar-server](https://github.com/imcuttle/github-similar-server)
+## 开发了 fm push-img (doc 待续)
+
+> 一个迷你封装 from 一个小轮子 [express-restful-fileman](https://github.com/big-wheel/express-restful-fileman)，用于方便管理静态的 sdk。
+静态服务推荐使用另外一个小轮子 [github-similar-server](https://github.com/big-wheel/github-similar-server)
 
 ## 如何使用
 ### 初始化
