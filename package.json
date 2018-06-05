@@ -1,0 +1,25 @@
+{
+  "name": "fileman-client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "client side about reseful-fileman service.",
+  "author": "imcuttle",
+  "scripts": {
+    "test": "jest",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "fileman-client"
+  ],
+  "license": "MIT",
+  "repository": "imcuttle/fileman-client",
+  "jest": {
+    "testMatch": [
+      "**/__test{s,}__/*.(spec|test).{t,j}s{x,}"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^23.0.0",
+    "jest": "^23.1.0"
+  }
+}
