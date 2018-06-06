@@ -1,6 +1,6 @@
 {
   "name": "fileman-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "client side about reseful-fileman service.",
   "author": "big-wheel",
