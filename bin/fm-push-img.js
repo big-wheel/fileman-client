@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const fm = require('../')
 const program = require('commander')
+const fs = require('fs')
 
 program
   .option('-c, --cwd <path>', 'Current work directory.', process.cwd())
@@ -16,6 +17,17 @@ const opt = {
   path: program.path
 }
 
+if (!program.args.length) {
+  console.error('Please set images to upload.')
+  process.exit(1)
+}
+
 fm(opt)
-  .pushImg(program.args.map(value => ({ value, path: opt.path })))
+  .pushImg(
+    program.args.map(value => ({
+      // to Buffer to use mapBufferPath
+      value: fs.readFileSync(value),
+      path: opt.path
+    }))
+  )
   .then(console.log, console.error)

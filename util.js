@@ -77,24 +77,31 @@ function push(file, options = {}) {
     if (null == eachFile) {
       return
     }
-    if (!eachFile.hasOwnProperty('value')) {
+
+    if (typeof eachFile === 'string' || Buffer.isBuffer(eachFile)) {
       eachFile = {
-        value: eachFile,
-        // 上传到服务端的相对文件路径
-        path: getFilePath(eachFile, { cwd, mapBufferPath })
+        value: eachFile
       }
     }
+    if (!eachFile.path) {
+      eachFile.path = getFilePath(eachFile.value, { cwd, mapBufferPath })
+    }
 
-    typeof eachFile.value === 'string' &&
-      debug("push's eachFile.value:", eachFile.value)
+    debug("push's eachFile.value:", eachFile.value)
     debug("push's eachFile.path:", eachFile.path)
-    q = q.attach(String(i), eachFile.value, { filepath: eachFile.path })
+    q = q.attach(
+      String(i),
+      eachFile.value,
+      eachFile.path ? { filepath: eachFile.path } : null
+    )
   })
 
   return q.then(res => res.body).catch(err => {
+    // debug('error', err)
     if (err.response && err.response.body) {
       throw new Error(err.response.body.message)
     }
+    throw err
   })
 }
 
