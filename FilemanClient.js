@@ -10,7 +10,7 @@ const dayjs = require('dayjs')
 const join = require('url-join')
 
 function getImgPathPrefix() {
-  return dayjs().format('YYYY/M/D')
+  return dayjs().format('YYYY/MM/DD')
 }
 
 class FilemanClient {
