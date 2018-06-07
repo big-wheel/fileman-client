@@ -14,6 +14,8 @@ npm i -g fileman-client
 > 一个迷你封装 from 一个小轮子 [express-restful-fileman](https://github.com/imcuttle/express-restful-fileman)，用于方便管理静态的 sdk。
 静态服务推荐使用另外一个小轮子 [github-similar-server](https://github.com/imcuttle/github-similar-server)
 
+## 以下文档内容纯属瞎掰！待维护
+
 ## 如何使用
 ### 初始化
 ```javascript
