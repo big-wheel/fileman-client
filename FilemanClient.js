@@ -32,6 +32,7 @@ class FilemanClient {
 
   /**
    * 推送图片
+   * @public
    * @param file {File}
    */
   pushImg(file, options) {

@@ -43,6 +43,7 @@ function getFilePath(file, { cwd, mapBufferPath }) {
 // 推送数据
 
 /**
+ * @public
  * @typedef {Object} SpecFile
  * @param value {Buffer|string} - string 类型时表示 filename
  * @param path [string]
@@ -51,11 +52,12 @@ function getFilePath(file, { cwd, mapBufferPath }) {
  */
 
 /**
+ * @public
  * @typedef {SpecFile | Buffer | string} File
  */
 
 /**
- *
+ * @public
  * @param file: {File[]|File}
  * @param options [{}]
  * @param options.baseUrl {string} - 拼接的 url 前缀

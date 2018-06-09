@@ -9,8 +9,9 @@
     "fileman-client": "bin/fm.js"
   },
   "scripts": {
+    "doc": "documentation readme *.js -s API --github --markdown-toc=false -a public",
     "test": "jest",
-    "prepublishOnly": "npm test"
+    "prepublishOnly": "npm run doc && npm test"
   },
   "keywords": [
     "fileman-client"
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@types/jest": "^23.0.0",
+    "documentation": "^8.0.0",
     "express": "^4.16.3",
     "express-restful-fileman": "^2.0.4",
     "jest": "^23.1.0",
